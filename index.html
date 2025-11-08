@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于我 - 个人自我介绍</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Inter', sans-serif; }
+        .skill-tag { transition: all 0.3s ease; }
+        .skill-tag:hover { transform: translateY(-3px); }
+        .social-icon { transition: all 0.3s ease; }
+        .social-icon:hover { transform: scale(1.1); color: #3b82f6 !important; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 min-h-screen flex flex-col">
+    <!-- 顶部导航 -->
+    <nav class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <h1 class="text-xl font-semibold text-blue-600">我的个人主页</h1>
+            <div class="flex gap-4">
+                <a href="#about" class="text-gray-600 hover:text-blue-600 transition">关于我</a>
+                <a href="#skills" class="text-gray-600 hover:text-blue-600 transition">技能</a>
+                <a href="#contact" class="text-gray-600 hover:text-blue-600 transition">联系我</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主要内容 -->
+    <main class="flex-grow container mx-auto px-4 py-12 md:py-20">
+        <!-- 头像与基本信息 -->
+        <section id="about" class="flex flex-col md:flex-row items-center gap-10 mb-16">
+            <!-- 头像 -->
+            <div class="relative">
+                <img 
+                    src="https://github.com/mo7891/mojinyu.github.io/blob/main/Screenshot_20251031_202249_com.tencent.tmgp.cod.jpg?raw=true" 
+                    alt="个人头像" 
+                    class="w-64 h-64 md:w-80 md:h-80 rounded-full object-cover shadow-lg border-4 border-white"
+                >
+                <div class="absolute -bottom-3 -right-3 bg-blue-600 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-md">
+                    <<i class="fa fa-user"></</i>
+                </div>
+            </div>
+
+            <!-- 个人信息 -->
+            <div class="text-center md:text-left max-w-2xl">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-900">你好，我是 <span class="text-blue-600">瑜</span></h2>
+                <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                    一名热爱技术、追求创新的开发者/设计师（可根据实际身份修改）。
+                    擅长将创意转化为实际产品，热衷于探索前沿技术与设计趋势，
+                    始终保持学习热情，期待与志同道合的伙伴共同成长。
+                </p>
+                <div class="flex flex-wrap justify-center md:justify-start gap-3 mb-6">
+                    <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">
+                        <<i class="fa fa-map-marker mr-1"></</i> 所在城市
+                    </span>
+                    <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">
+                        <<i class="fa fa-briefcase mr-1"></</i> 职业身份
+                    </span>
+                    <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm">
+                        <<i class="fa fa-graduation-cap mr-1"></</i> 教育背景
+                    </span>
+                </div>
+                <a href="#contact" class="inline-block bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition shadow-md hover:shadow-lg">
+                    <<i class="fa fa-paper-plane mr-2"></</i> 联系我
+                </a>
+            </div>
+        </section>
+
+        <!-- 技能展示 -->
+        <section id="skills" class="mb-16">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center text-gray-900">
+                <<i class="fa fa-code text-blue-600 mr-2"></</i> 我的技能
+            </h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="skill-tag bg-white p-4 rounded-lg shadow hover:shadow-md border border-gray-100">
+                    <<i class="fa fa-html5 text-orange-500 text-2xl mb-2"></</i>
+                    <h3 class="font-semibold mb-1">HTML5</h3>
+                    <p class="text-sm text-gray-500">熟练掌握</p>
+                </div>
+                <div class="skill-tag bg-white p-4 rounded-lg shadow hover:shadow-md border border-gray-100">
+                    <<i class="fa fa-css3 text-blue-500 text-2xl mb-2"></</i>
+                    <h3 class="font-semibold mb-1">CSS3</h3>
+                    <p class="text-sm text-gray-500">熟练掌握</p>
+                </div>
+                <div class="skill-tag bg-white p-4 rounded-lg shadow hover:shadow-md border border-gray-100">
+                    <<i class="fa fa-js text-yellow-500 text-2xl mb-2"></</i>
+                    <h3 class="font-semibold mb-1">JavaScript</h3>
+                    <p class="text-sm text-gray-500">熟练掌握</p>
+                </div>
+                <div class="skill-tag bg-white p-4 rounded-lg shadow hover:shadow-md border border-gray-100">
+                    <<i class="fa fa-github text-gray-800 text-2xl mb-2"></</i>
+                    <h3 class="font-semibold mb-1">Git</h3>
+                    <p class="text-sm text-gray-500">熟练掌握</p>
+                </div>
+                <div class="skill-tag bg-white p-4 rounded-lg shadow hover:shadow-md border border-gray-100">
+                    <<i class="fa fa-paint-brush text-purple-500 text-2xl mb-2"></</i>
+                    <h3 class="font-semibold mb-1">UI设计</h3>
+                    <p class="text-sm text-gray-500">良好掌握</p>
+                </div>
+                <div class="skill-tag bg-white p-4 rounded-lg shadow hover:shadow-md border border-gray-100">
+                    <<i class="fa fa-database text-green-500 text-2xl mb-2"></</i>
+                    <h3 class="font-semibold mb-1">数据库</h3>
+                    <p class="text-sm text-gray-500">良好掌握</p>
+                </div>
+                <div class="skill-tag bg-white p-4 rounded-lg shadow hover:shadow-md border border-gray-100">
+                    <<i class="fa fa-mobile text-teal-500 text-2xl mb-2"></</i>
+                    <h3 class="font-semibold mb-1">响应式开发</h3>
+                    <p class="text-sm text-gray-500">熟练掌握</p>
+                </div>
+                <div class="skill-tag bg-white p-4 rounded-lg shadow hover:shadow-md border border-gray-100">
+                    <<i class="fa fa-language text-indigo-500 text-2xl mb-2"></</i>
+                    <h3 class="font-semibold mb-1">英语</h3>
+                    <p class="text-sm text-gray-500">读写流利</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系信息 -->
+        <section id="contact">
+            <h2 class="text-2xl md:text-3xl font-bold mb-8 text-center text-gray-900">
+                <<i class="fa fa-envelope text-blue-600 mr-2"></</i> 联系我
+            </h2>
+            <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 max-w-3xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <div class="flex items-center gap-4">
+                        <div class="bg-blue-100 text-blue-600 rounded-full w-12 h-12 flex items-center justify-center">
+                            <<i class="fa fa-envelope text-xl"></</i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-1">邮箱</h3>
+                            <p class="text-gray-600">example@mail.com</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="bg-green-100 text-green-600 rounded-full w-12 h-12 flex items-center justify-center">
+                            <<i class="fa fa-phone text-xl"></</i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-1">电话</h3>
+                            <p class="text-gray-600">138-xxxx-xxxx</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="bg-purple-100 text-purple-600 rounded-full w-12 h-12 flex items-center justify-center">
+                            <<i class="fa fa-weixin text-xl"></</i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-1">微信</h3>
+                            <p class="text-gray-600">wechat_id</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div class="bg-gray-100 text-gray-600 rounded-full w-12 h-12 flex items-center justify-center">
+                            <<i class="fa fa-github text-xl"></</i>
+                        </div>
+                        <div>
+                            <h3 class="font-semibold mb-1">GitHub</h3>
+                            <p class="text-gray-600">github.com/username</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="space-y-4">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">姓名</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition" placeholder="请输入你的姓名">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">邮箱</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition" placeholder="请输入你的邮箱">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-sm font-medium text-gray-700 mb-1">留言</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition" placeholder="请输入你的留言..."></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium px-6 py-3 rounded-lg transition shadow-md hover:shadow-lg">
+                        <<i class="fa fa-paper-plane mr-2"></</i> 发送留言
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div class="text-center md:text-left">
+                    <h3 class="text-xl font-semibold mb-2">瑜</h3>
+                    <p class="text-gray-400 text-sm">热爱导管 · 热爱技术 · 持续成长</p>
+                </div>
+                <div class="flex gap-4">
+                    <a href="#" class="social-icon text-gray-400 hover:text-white text-xl">
+                        <<i class="fa fa-github"></</i>
+                    </a>
+                    <a href="#" class="social-icon text-gray-400 hover:text-white text-xl">
+                        <<i class="fa fa-weibo"></</i>
+                    </a>
+                    <a href="#" class="social-icon text-gray-400 hover:text-white text-xl">
+                        <<i class="fa fa-linkedin"></</i>
+                    </a>
+                    <a href="#" class="social-icon text-gray-400 hover:text-white text-xl">
+                        <<i class="fa fa-codepen"></</i>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-6 pt-6 text-center text-gray-500 text-sm">
+                © 2025 个人主页. 保留所有权利.
+            </div>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg transition opacity-0 invisible" id="backToTop">
+        <<i class="fa fa-arrow-up"></</i>
+    </button>
+
+    <script>
+        // 回到顶部按钮显示/隐藏逻辑
+        window.addEventListener('scroll', function() {
+            const backToTop = document.getElementById('backToTop');
+            if (window.scrollY > 300) {
+                backToTop.classList.remove('opacity-0', 'invisible');
+                backToTop.classList.add('opacity-100', 'visible');
+            } else {
+                backToTop.classList.remove('opacity-100', 'visible');
+                backToTop.classList.add('opacity-0', 'invisible');
+            }
+        });
+
+        // 平滑滚动
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
